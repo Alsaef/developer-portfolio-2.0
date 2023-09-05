@@ -1,0 +1,40 @@
+[
+    {
+        "category": "Web Development",
+        "project_name": "Phone Hunter 2.0",
+        "git_Link":"",
+        "resources": [
+         "React js",
+          "Node.js",
+          "Express.js",
+          "MongoDB"
+        ],
+        "project_image_section": "https://i.ibb.co/xfPmgVK/screencapture-localhost-5173-2023-09-03-00-34-26.png"
+      },
+    {
+        "category": "Web Development",
+        "project_name": "Phone Hunter",
+        "git_Link":"https://github.com/Alsaef/phone-info",
+        "resources": [
+         "HTML",
+         "CSS",
+         "Bootstrap",
+         "JavaScript",
+          "Rest Api"
+        ],
+        "project_image_section": "https://i.ibb.co/DpN9pvj/screencapture-127-0-0-1-5500-indrx-html-2023-09-05-15-12-31.png"
+      },
+    {
+        "category": "Web Development",
+        "project_name": "Our Mess",
+        "git_Link":"https://github.com/Alsaef/mess-web-site",
+        "resources": [
+         "HTML",
+         "CSS",
+         "Bootstrap",
+         "JavaScript",
+          "Rest Api"
+        ],
+        "project_image_section": "https://i.ibb.co/x8gB8p1/screencapture-najir-bari-mess-netlify-app-2023-09-05-15-13-32.png"
+      }
+]
