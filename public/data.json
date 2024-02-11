@@ -26,15 +26,14 @@
       },
     {
         "category": "Web Development",
-        "project_name": "Our Mess",
-        "git_Link":"https://github.com/Alsaef/mess-web-site",
+        "project_name": "Bistro Boss",
+        "git_Link":"https://github.com/Alsaef/bistro_cliend2",
         "resources": [
-         "HTML",
-         "CSS",
-         "Bootstrap",
-         "JavaScript",
-          "Rest Api"
+          "React js",
+          "Node.js",
+          "Express.js",
+          "MongoDB"
         ],
-        "project_image_section": "https://i.ibb.co/x8gB8p1/screencapture-najir-bari-mess-netlify-app-2023-09-05-15-13-32.png"
+        "project_image_section": "https://i.ibb.co/vB2fVWQ/screencapture-localhost-5173-2023-11-23-20-45-39.png"
       }
 ]

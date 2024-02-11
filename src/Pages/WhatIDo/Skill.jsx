@@ -5,6 +5,7 @@ import react from '../../assets/Images/skill/react.png'
 import node from '../../assets/Images/skill/nodejs.png'
 import mongo from '../../assets/Images/skill/mongo.png'
 import Progress from '../Progress/Progress';
+import MySkill from '../My Skill/MySkill';
 const Skill = () => {
     return (
         <div className=' mt-24 bg-[#d6f1ff] p-4'>
@@ -77,6 +78,7 @@ const Skill = () => {
                     </div>
                 </div>
             </section>
+            <MySkill></MySkill>
             <Progress></Progress>
         </div>
     );

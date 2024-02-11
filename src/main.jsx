@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home.jsx';
 import Project from './Pages/Project/Project.jsx';
 import Full from './Pages/Project/Full';
 import Contact from './Pages/Contact/Contact';
+import Error from './Pages/ErrorPage/Error';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,12 +27,16 @@ const router = createBrowserRouter([
       {
         path: "/project",
         element: <Project />,
-        loader:()=>fetch('https://developer-server-production.up.railway.app/projects')
       },
       {
         path: "/project/:id",
         element: <Full />,
-        loader:({params})=>fetch(`https://developer-server-production.up.railway.app/projects/${params.id}`)
+        loader:({params})=>fetch(`https://developer-server.vercel.app/projects/${params.id}`),
+       errorElement:<Error/>
+      },
+      {
+        path: "*",
+        element: <Error />,
       },
     ],
   },
