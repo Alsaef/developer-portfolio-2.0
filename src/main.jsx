@@ -11,6 +11,9 @@ import Project from './Pages/Project/Project.jsx';
 import Full from './Pages/Project/Full';
 import Contact from './Pages/Contact/Contact';
 import Error from './Pages/ErrorPage/Error';
+import { Provider } from 'react-redux'
+import { store } from './app/store.js';
+import Video from './Pages/Video/Video.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,14 +28,17 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/project",
+        path: "/projects",
         element: <Project />,
+      },
+      {
+        path: "/explorprojects",
+        element: < Video/>,
       },
       {
         path: "/project/:id",
         element: <Full />,
         loader:({params})=>fetch(`https://developer-server.vercel.app/projects/${params.id}`),
-       errorElement:<Error/>
       },
       {
         path: "*",
@@ -43,6 +49,8 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+   <Provider store={store}>
+   <RouterProvider router={router} />
+   </Provider>
   </React.StrictMode>,
 )

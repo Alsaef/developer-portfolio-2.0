@@ -13,17 +13,19 @@ const Full = () => {
     <div>
       <h1 className="text-5xl font-bold">{project.project_name}</h1>
     <div>
+      <h2 className='py-4 text-2xl '>has been used</h2>
         {
-            project.resources.map((data,index)=> <p key={index}>{data}</p>)
+            project.resources.map((data,index)=> <p className='font-semibold' key={index}>#{data}</p>)
         }
     </div>
    <div className=' mt-2'>
-   <a href={project.git_Link}><button className="btn btn-primary">Source Code Link</button></a>
-    <Link to='/project'><button className='btn ms-2 btn-success text-white'>Back</button></Link>
+   <a target='_blank' href={project.live_Link}><button className="btn btn-primary">Live Link</button></a>
+    <Link to='/projects'><button className='btn ms-2 btn-success text-white'>Back</button></Link>
    </div>
     </div>
   </div>
 </div> 
+
         </div>
     );
 };

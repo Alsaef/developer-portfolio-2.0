@@ -3,24 +3,13 @@ import React, { useEffect, useState } from 'react';
 import ProjectData from './ProjectData';
 import Footer from '../Footer/Footer';
 import Loading from '../../Components/Loading';
-import Loader from '../../hook/Loader';
+import { useGetProjectQuery } from '../../features/projectApi/project';
 
 const Project = () => {
    
-  const loading=Loader()
+  const {data,isLoading,isError}=useGetProjectQuery()
 
-  const [projects,setProject]=useState([])
-
-  useEffect(()=>{
-    fetch('data.json')
-    .then(res=>res.json())
-    .then(data =>{
-        console.log(data)
-        setProject(data)
-    })
-  },[])
-
-    if (loading) {
+    if (isLoading) {
         return (
             <Loading></Loading>
         )
@@ -34,7 +23,7 @@ const Project = () => {
                </div>
             <div className=' grid lg:grid-cols-3 grid-cols-1 gap-6 mb-2'>
                 {
-                    projects.map((project,index) => <ProjectData key={index} project={project}></ProjectData>)
+                    data.map((project,index) => <ProjectData key={index} project={project}></ProjectData>)
                 }
             </div>
             <Footer></Footer>

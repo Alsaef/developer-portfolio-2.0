@@ -13,7 +13,8 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li className=' font-semibold text-2xl'><Link to='/'>Home</Link></li>
-                            <li className=' font-semibold text-2xl'><Link to='/project'>Project</Link></li>
+                            <li className=' font-semibold text-2xl'><Link to='/projects'>Projects</Link></li>
+                            <li className=' font-semibold text-2xl'><Link to='/explorprojects'>Explor Projects</Link></li>
                             <li className=' font-semibold text-2xl'><Link to='/contact'>Contact</Link></li>
                         </ul>
                     </div>
@@ -21,9 +22,10 @@ const Header = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li className=' font-semibold text-xl'><Link to='/'>Home</Link></li>
-                        <li className=' font-semibold text-xl'><Link to='/project'>Project</Link></li>
-                        <li className=' font-semibold text-xl'><Link to='/contact'>Contact</Link></li>
+                        <li className=' font-semibold '><Link to='/'>Home</Link></li>
+                        <li className=' font-semibold '><Link to='/projects'>Projects</Link></li>
+                        <li className=' font-semibold '><Link to='/explorprojects'>Explor Projects</Link></li>
+                        <li className=' font-semibold '><Link to='/contact'>Contact</Link></li>
                     </ul>
                 </div>
             </div>
