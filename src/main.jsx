@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: "/project/:id",
         element: <Full />,
-        loader:({params})=>fetch(`https://developer-server.vercel.app/projects/${params.id}`),
+        loader:({params})=>fetch(`https://developer-server2-0.vercel.app/projects/${params.id}`),
       },
       {
         path: "*",

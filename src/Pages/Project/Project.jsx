@@ -15,6 +15,13 @@ const Project = () => {
         )
     }
     
+    if(isError){
+return(
+    <div className='h-screen py-8'>
+        <h2 className='text-center text-4xl font-semibold '>Internal Error 503</h2>
+    </div>
+)
+    }
     return (
         <div className=' bg-[#fef1e2] h-screen '>
                <div className='py-5'>

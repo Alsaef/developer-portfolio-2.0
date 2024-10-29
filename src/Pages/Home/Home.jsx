@@ -11,7 +11,9 @@ const Home = () => {
         <div>
           <Banner></Banner>
           <AboutMe></AboutMe>
+          
           <Skill></Skill>
+         
           <Footer></Footer>
         </div>
     );

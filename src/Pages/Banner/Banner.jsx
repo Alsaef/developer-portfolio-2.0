@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import BannerImg from '../../assets/Images/Banner/ratul bg.png'
+import BannerImg from '../../assets/Images/Banner/my-bg.png'
 import './Banner.css'
-import { FaGithub,FaFacebook,FaLinkedin } from 'react-icons/fa';
+import { FaGithub,FaFacebook,FaLinkedin,FaDownload } from 'react-icons/fa';
 const Banner = () => {
     return (
         <div>
@@ -13,9 +13,12 @@ const Banner = () => {
         <p className=' text-2xl font-semibold'>This is,</p>
       <h1 className="text-5xl font-bold text-orange-500">AL SAEF RATUL</h1>
       <p className="py-6 text-4xl">Web Developer (Frontend-React.js)</p>
-      <a href="https://www.facebook.com/profile.php?id=100064069724626"><button className='btn btn-success mx-1 text-white text-2xl'><FaFacebook /></button></a>
+   <div className='flex items-center'>
+   <a href="https://www.facebook.com/profile.php?id=100064069724626"><button className='btn btn-success mx-1 text-white text-2xl'><FaFacebook /></button></a>
       <a href="https://github.com/Alsaef"><button className='btn btn-success mx-1 text-white text-2xl'><FaGithub /></button></a>
      <a href="https://www.linkedin.com/in/al-saef-ratul-b0a380276/"> <button className='btn btn-success mx-1 text-white text-2xl'><FaLinkedin /></button></a>
+     <a href="https://heyzine.com/flip-book/daf92858b0.html#page/1"> <button className='btn btn-success mx-1 text-white text-2xl'><FaDownload/> </button></a>
+   </div>
     </div>
   </div>
 </div>
