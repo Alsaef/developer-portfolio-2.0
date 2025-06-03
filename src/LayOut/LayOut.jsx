@@ -12,15 +12,15 @@ import Loading from '../Components/Loading';
 const LayOut = () => {
    const [loading,setLoading]=useState(true);
 
-   useEffect(()=>{
-   setTimeout(() => {
-    setLoading(false)
-   }, 1500);
-   },[])
+//    useEffect(()=>{
+//    setTimeout(() => {
+//     setLoading(false)
+//    }, 1500);
+//    },[])
 
-   if (loading) {
-    return <Loading></Loading>
-   }
+//    if (loading) {
+//     return <Loading></Loading>
+//    }
     return (
         <div>
             <Scroll></Scroll>
