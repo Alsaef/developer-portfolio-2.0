@@ -10,6 +10,7 @@ import Home from './Page/Home';
 import About from './Page/About';
 import Projects from './Page/Projects';
 import Resume from './Page/Resume';
+import NotFound from './Page/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/resume",
         element: <Resume></Resume>,
+      },
+      {
+        path: "*",
+        element: <NotFound></NotFound>,
       },
     ],
   },
