@@ -5,15 +5,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import LayOut from './LayOut/LayOut.jsx';
-import Home from './Pages/Home/Home.jsx';
-import Project from './Pages/Project/Project.jsx';
-import Full from './Pages/Project/Full';
-import Contact from './Pages/Contact/Contact';
-import Error from './Pages/ErrorPage/Error';
-import { Provider } from 'react-redux'
-import { store } from './app/store.js';
-import Video from './Pages/Video/Video.jsx';
+import LayOut from './LayOut/LayOut';
+import Home from './Page/Home';
+import About from './Page/About';
+import Projects from './Page/Projects';
+import Resume from './Page/Resume';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,36 +18,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <Home></Home>,
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/about",
+        element: <About></About>,
       },
       {
         path: "/projects",
-        element: <Project />,
+        element: <Projects></Projects>,
       },
       {
-        path: "/explorprojects",
-        element: < Video/>,
-      },
-      {
-        path: "/project/:id",
-        element: <Full />,
-        loader:({params})=>fetch(`https://developer-server2-0.vercel.app/projects/${params.id}`),
-      },
-      {
-        path: "*",
-        element: <Error />,
+        path: "/resume",
+        element: <Resume></Resume>,
       },
     ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <Provider store={store}>
-   <RouterProvider router={router} />
-   </Provider>
+   
+      <RouterProvider router={router} />
+    
   </React.StrictMode>,
 )

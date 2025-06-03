@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
+
+import { keepTheme } from "keep-react/keepTheme";
+const config = {
+    content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
   },
-  daisyui: {
-    themes: ["light", "dark", "cupcake"],
-  },
-  plugins: [require("daisyui")],
+  plugins: [],
 }
 
+export default keepTheme(config);
