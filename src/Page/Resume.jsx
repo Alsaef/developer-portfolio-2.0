@@ -2,6 +2,7 @@
 import React from 'react';
 import { AiOutlineDownload } from "react-icons/ai";
 import ParticlesBackground from '../Components/ParticlesBackground';
+import PdfView from '../Components/PdfView';
 const Resume = () => {
     return (
         <div className="">
@@ -15,6 +16,8 @@ const Resume = () => {
                 <AiOutlineDownload />  &nbsp; Download Resume
                 </button></a>
             </div>
+
+            <PdfView></PdfView>
         </div>
     );
 };
