@@ -17,7 +17,7 @@ const Resume = () => {
                 </button></a>
             </div>
 
-            <PdfView></PdfView>
+            {/* <PdfView></PdfView> */}
         </div>
     );
 };

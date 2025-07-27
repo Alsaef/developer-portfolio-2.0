@@ -20,9 +20,9 @@ const PdfView = () => {
 
   return (
     <div className="flex justify-center">
-      <Document file="./al-saef-ratut-cv.pdf">
+      {/* <Document file="./al-saef-ratut-cv.pdf">
         <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-      </Document>
+      </Document> */}
     </div>
   );
 };
