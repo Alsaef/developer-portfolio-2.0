@@ -45,9 +45,10 @@ const AppBar = () => {
         <>
             <Link to='/'><NavbarItem className=' text-[var(--color-secondary)]  hover:text-[var(--color-primary)]  transition-all duration-200 flex items-center space-x-2'>  <AiOutlineHome style={{ marginBottom: "2px" }} />  <span>HOME</span></NavbarItem></Link>
             <Link to='/about'><NavbarItem className=' text-[var(--color-secondary)] hover:text-[var(--color-primary)]  transition-all duration-200 flex items-center space-x-2'>  <AiOutlineUser style={{ marginBottom: "2px" }} />  <span>ABOUT US</span></NavbarItem></Link>
-            <Link to='/projects'><NavbarItem className=' text-[var(--color-secondary)] hover:text-[var(--color-primary)]  transition-all duration-200 flex items-center space-x-2'>  <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />  <span>PROJECTS</span></NavbarItem></Link>
+            <Link to='/projects'><NavbarItem className=' text-[var(--color-secondary)] hover:text-[var(--color-primary)]  transition-all duration-200 flex items-center space-x-2'>  <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />  <span>PERSONAL | PROJECTS</span></NavbarItem></Link>
+            <Link to='/clients'><NavbarItem className=' text-[var(--color-secondary)] hover:text-[var(--color-primary)]  transition-all duration-200 flex items-center space-x-2'>  <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />  <span>CLIENTS | PROJECTS</span></NavbarItem></Link>
             <Link to='/resume'><NavbarItem className=' text-[var(--color-secondary)] hover:text-[var(--color-primary)]  transition-all duration-200 flex items-center space-x-2'>  <CgFileDocument style={{ marginBottom: "2px" }} />  <span>RESUME</span></NavbarItem></Link>
-            <a href='https://asr-code-blog.netlify.app/' target='_blank'><NavbarItem className=' text-[var(--color-secondary)]  hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] transition-all duration-200 flex items-center space-x-2'>  <ImBlog style={{ marginBottom: "2px" }} />  <span>BLOGS</span></NavbarItem></a>
+            <a href='https://code-blog-2-0.vercel.app/' target='_blank'><NavbarItem className=' text-[var(--color-secondary)]  hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] transition-all duration-200 flex items-center space-x-2'>  <ImBlog style={{ marginBottom: "2px" }} />  <span>BLOGS</span></NavbarItem></a>
         </>
     );
     return (

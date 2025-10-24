@@ -11,6 +11,7 @@ import About from './Page/About';
 import Projects from './Page/Projects';
 import Resume from './Page/Resume';
 import NotFound from './Page/NotFound';
+import Clients from './Page/Clients';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects></Projects>,
+      },
+         {
+        path: "/clients",
+        element: <Clients></Clients>,
       },
       {
         path: "/resume",

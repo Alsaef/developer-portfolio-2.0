@@ -11,14 +11,14 @@ const ProjectCard = ({ imgPath, title, description, ghLink, demoLink }) => {
                 <h3 className="text-lg font-bold mb-2">{title}</h3>
                 <p className="text-justify">{description}</p>
                 <div className="flex items-center mt-4">
-                    <a
+                 {ghLink.length>=1&&   <a
                         className="bg-[var(--color-primary)] text-white font-medium py-2 px-4 rounded hover:bg-opacity-90 transition duration-300 flex items-center"
                         href={ghLink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <BsGithub className="mr-2" /> GitHub
-                    </a>
+                    </a>}
                     {"\n"}
                     {"\n"}
                     <a
