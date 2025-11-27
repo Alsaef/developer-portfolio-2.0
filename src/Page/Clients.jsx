@@ -42,7 +42,7 @@ const Clients = () => {
                             title="BanglaVersity"
                             description="BanglaVersity is a modern digital library and book reading platform, offering a vast collection of Bengali literature, academic texts, and articles. Users can discover, read, and organize their favorite books in a clean, responsive, and user-friendly interface. Built with React.js, Tailwind CSS, and a Node.js backend, the site ensures an exceptionally fast, SEO-friendly, and seamless reading experience for book lovers everywhere."
                             ghLink=""
-                            demoLink="https://code-blog-2-0.vercel.app/"
+                            demoLink="https://banglaversity.com/"
                         />
                        
 
