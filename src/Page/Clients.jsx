@@ -1,10 +1,52 @@
 import React from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import ParticlesBackground from '../Components/ParticlesBackground';
+import { Helmet } from 'react-helmet-async';
 
 const Clients = () => {
     return (
         <div>
+                <Helmet>
+      <title>Client Projects | AL SAEF RATUL</title>
+
+      <meta
+        name="description"
+        content="Client projects delivered by AL SAEF RATUL including production-ready web applications and business solutions."
+      />
+
+      <link
+        rel="canonical"
+        href="https://developer-ratul.netlify.app/client-projects"
+      />
+
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Client Projects | AL SAEF RATUL" />
+      <meta
+        property="og:description"
+        content="Production-ready client projects using React, Node.js, and modern web tools."
+      />
+      <meta
+        property="og:url"
+        content="https://developer-ratul.netlify.app/client-projects"
+      />
+      <meta
+        property="og:image"
+        content="https://developer-ratul.netlify.app/assets/my-bg-02d338d3.png"
+      />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Client Projects | AL SAEF RATUL" />
+      <meta
+        name="twitter:description"
+        content="Production-ready client projects using React, Node.js, and modern web tools."
+      />
+      <meta
+        name="twitter:image"
+        content="https://developer-ratul.netlify.app/assets/my-bg-02d338d3.png"
+      />
+    </Helmet>
              <ParticlesBackground></ParticlesBackground>
 
             <div className='mt-20'>

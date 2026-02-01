@@ -3,9 +3,51 @@ import React from 'react';
 import { AiOutlineDownload } from "react-icons/ai";
 import ParticlesBackground from '../Components/ParticlesBackground';
 import PdfView from '../Components/PdfView';
+import { Helmet } from 'react-helmet-async';
 const Resume = () => {
     return (
         <div className="">
+                <Helmet>
+      <title>Resume | AL SAEF RATUL</title>
+
+      <meta
+        name="description"
+        content="View and download the resume of AL SAEF RATUL, Frontend React.js Developer with MERN stack experience."
+      />
+
+      <link
+        rel="canonical"
+        href="https://developer-ratul.netlify.app/resume"
+      />
+
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Resume | AL SAEF RATUL" />
+      <meta
+        property="og:description"
+        content="Frontend React.js Developer resume with skills, experience, and projects."
+      />
+      <meta
+        property="og:url"
+        content="https://developer-ratul.netlify.app/resume"
+      />
+      <meta
+        property="og:image"
+        content="https://developer-ratul.netlify.app/assets/my-bg-02d338d3.png"
+      />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Resume | AL SAEF RATUL" />
+      <meta
+        name="twitter:description"
+        content="Frontend React.js Developer resume with skills, experience, and projects."
+      />
+      <meta
+        name="twitter:image"
+        content="https://developer-ratul.netlify.app/assets/my-bg-02d338d3.png"
+      />
+    </Helmet>
             <ParticlesBackground />
 
             <div className='mt-7'>
