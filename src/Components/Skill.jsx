@@ -1,5 +1,5 @@
 import React from 'react';
-import { CgCPlusPlus } from "react-icons/cg";
+import { motion } from 'framer-motion';
 import {
     DiJavascript1,
     DiReact,
@@ -15,98 +15,97 @@ import {
     SiHtml5,
     SiCss3,
     SiTailwindcss,
-    SiRedux,
     SiPostman,
     SiVercel,
     SiNetlify,
-    SiGithub
+    SiGithub,
+    SiLinux,
+    SiTypescript,
+    SiVisualstudiocode
 } from "react-icons/si";
 
+// Categorized arrays for cleaner rendering and easier future updates
+const skillSet = [
+    { icon: DiJavascript1, name: "JavaScript", color: "text-yellow-400" },
+    { icon: SiTypescript, name: "TypeScript", color: "text-blue-500" },
+    { icon: DiReact, name: "React JS", color: "text-sky-400" },
+    { icon: SiNextdotjs, name: "Next JS", color: "text-white" },
+    { icon: DiNodejs, name: "Node JS", color: "text-green-500" },
+    { icon: SiExpress, name: "Express JS", color: "text-gray-300" },
+    { icon: DiMongodb, name: "MongoDB", color: "text-green-600" },
+    { icon: DiPython, name: "Python", color: "text-blue-500" },
+    { icon: SiHtml5, name: "HTML5", color: "text-orange-500" },
+    { icon: SiCss3, name: "CSS3", color: "text-blue-500" },
+    { icon: SiTailwindcss, name: "Tailwind CSS", color: "text-cyan-400" },
+];
+
+const toolSet = [
+    { icon: SiLinux, name: "Linux", color: "text-yellow-500" },
+    { icon: SiVisualstudiocode, name: "VS Code", color: "text-blue-500" },
+    { icon: DiGit, name: "Git", color: "text-orange-600" },
+    { icon: SiGithub, name: "GitHub", color: "text-white" },
+    { icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
+    { icon: SiPostman, name: "Postman", color: "text-orange-500" },
+    { icon: SiVercel, name: "Vercel", color: "text-white" },
+    { icon: SiNetlify, name: "Netlify", color: "text-teal-400" },
+];
+
 const Skill = () => {
-        return (
-                <div className='mt-20'>
-                        <h2 className='text-white text-4xl text-center font-medium'>
-                                Professional <span className='text-[var(--color-primary)]'>Skillset And Tools</span>
-                        </h2>
-                        <div>
-                                <div className='flex flex-wrap justify-center mt-10'>
-                                        <div className='m-4'>
-                                                <DiJavascript1 className='text-6xl text-yellow-500' />
-                                                <p className='text-white text-center mt-2'>JavaScript</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <DiReact className='text-6xl text-blue-500' />
-                                                <p className='text-white text-center mt-2'>React JS</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiRedux className='text-6xl text-[var(--color-primary)]' />
-                                                <p className='text-white text-center mt-2'>Redux</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiNextdotjs className='text-6xl text-gray-500' />
-                                                <p className='text-white text-center mt-2'>Next JS</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiExpress className='text-6xl text-gray-500' />
-                                                <p className='text-white text-center mt-2'>Express JS</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <DiNodejs className='text-6xl text-green-500' />
-                                                <p className='text-white text-center mt-2'>Node JS</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <DiMongodb className='text-6xl text-green-500' />
-                                                <p className='text-white text-center mt-2'>MongoDB</p>
-                                        </div>
-                                      
-                                        <div className='m-4'>
-                                                <DiPython className='text-6xl text-blue-500' />
-                                                <p className='text-white text-center mt-2'>Python</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiHtml5 className='text-6xl text-orange-500' />
-                                                <p className='text-white text-center mt-2'>HTML</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiCss3 className='text-6xl text-blue-500' />
-                                                <p className='text-white text-center mt-2'>CSS</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiTailwindcss className='text-6xl text-blue-300' />
-                                                <p className='text-white text-center mt-2'>Tailwind CSS</p>
-                                        </div>
-                                       
-                                </div>
-                                <div className='flex flex-wrap justify-center mt-10'>
-                                   
-                                        <div className='m-4'>
-                                                <SiFirebase className='text-6xl text-yellow-500' />
-                                                <p className='text-white text-center mt-2'>Firebase</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <DiGit className='text-6xl text-orange-400' />
-                                                <p className='text-white text-center mt-2'>Git</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiPostman className='text-6xl text-orange-400' />
-                                                <p className='text-white text-center mt-2'>Post Man</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiVercel className='text-6xl text-white' />
-                                                <p className='text-white text-center mt-2'>Vercel</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                <SiNetlify className='text-6xl text-sky-500' />
-                                                <p className='text-white text-center mt-2'>Netlify</p>
-                                        </div>
-                                        <div className='m-4'>
-                                                < SiGithub className='text-6xl text-gray-500' />
-                                                <p className='text-white text-center mt-2'>GitHub</p>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        );
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.1 }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    };
+
+    const renderCards = (items) => (
+        <motion.div 
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-wrap justify-center gap-6 mt-10"
+        >
+            {items.map((item, index) => (
+                <motion.div
+                    key={index}
+                    variants={itemVariants}
+                    className="group flex flex-col items-center justify-center w-32 h-32 md:w-36 md:h-36 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:-translate-y-2 hover:border-[var(--color-primary)]/50 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(var(--color-primary-rgb),0.2)] transition-all duration-300 cursor-pointer"
+                >
+                    <item.icon className={`text-5xl md:text-6xl ${item.color} group-hover:scale-110 transition-transform duration-300`} />
+                    <p className="text-gray-300 group-hover:text-white text-sm font-medium tracking-wide mt-4 transition-colors duration-300">
+                        {item.name}
+                    </p>
+                </motion.div>
+            ))}
+        </motion.div>
+    );
+
+    return (
+        <section className="mt-32 max-w-6xl mx-auto px-4 relative z-10">
+            {/* Languages & Frameworks Section */}
+            <div className="mb-20">
+                <h2 className="text-white text-3xl md:text-4xl text-center font-bold tracking-wide">
+                    Professional <span className="text-[var(--color-primary)]">Skillset</span>
+                </h2>
+                {renderCards(skillSet)}
+            </div>
+
+            {/* Tools & Platforms Section */}
+            <div>
+                <h2 className="text-white text-3xl md:text-4xl text-center font-bold tracking-wide">
+                    Tools & <span className="text-[var(--color-primary)]">Platforms</span>
+                </h2>
+                {renderCards(toolSet)}
+            </div>
+        </section>
+    );
 };
 
 export default Skill;

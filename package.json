@@ -15,6 +15,7 @@
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/engine": "^3.8.1",
     "axios": "^1.6.8",
+    "framer-motion": "^13.2.0",
     "keep-react": "^1.6.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
