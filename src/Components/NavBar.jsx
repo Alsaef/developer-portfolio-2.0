@@ -3,7 +3,9 @@ import {
     AiOutlineHome,
     AiOutlineFundProjectionScreen,
     AiOutlineUser,
+    AiOutlineMail,
 } from "react-icons/ai";
+import { BsBriefcase } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
@@ -21,8 +23,9 @@ const navItems = [
     { name: 'HOME', path: '/', icon: <AiOutlineHome size={18} /> },
     { name: 'ABOUT', path: '/about', icon: <AiOutlineUser size={18} /> },
     { name: 'PROJECTS', path: '/projects', icon: <AiOutlineFundProjectionScreen size={18} /> },
-    { name: 'CLIENTS', path: '/clients', icon: <AiOutlineFundProjectionScreen size={18} /> },
+    { name: 'CLIENTS', path: '/clients', icon: <BsBriefcase size={18} /> },
     { name: 'RESUME', path: '/resume', icon: <CgFileDocument size={18} /> },
+    { name: 'CONTACT', path: '/contact', icon: <AiOutlineMail size={18} /> },
 ];
 
 const AppBar = () => {

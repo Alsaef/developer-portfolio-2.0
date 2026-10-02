@@ -1,24 +1,27 @@
-'use client'
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+
 const Type = () => {
     return (
-        <div className="text-[var(--color-primary)]  text-2xl mt-8 font-semibold">
-        <TypeAnimation
-            sequence={[
-                'Web Developer',
-                1000,
-                'FRONT-END Developer',
-                1000,
-                'MEARN Stack Developer',
-                1000,
-               
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-        />
-    </div>    
+        <div className="text-[var(--color-primary)] text-2xl mt-4 font-semibold tracking-wide">
+            <TypeAnimation
+                sequence={[
+                    'Frontend Web Developer',
+                    1500,
+                    'MERN Stack Developer',
+                    1500,
+                    'React.js Specialist',
+                    1500,
+                    'Interactive UI/UX Creator',
+                    1500,
+                    'Open Source Contributor',
+                    1500,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+            />
+        </div>    
     );
 };
 
